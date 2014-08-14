@@ -1,7 +1,7 @@
 test 2
 package com.github.Yasenia.flea_school.server.dao;
 
-import java.util.List;
+import java.util.List;2
 
 import com.github.Yasenia.flea_school.server.entity.GoodsType;
 import com.github.Yasenia.flea_school.server.entity.Location;
