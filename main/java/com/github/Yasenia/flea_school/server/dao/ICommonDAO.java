@@ -1,4 +1,3 @@
-test 2
 package com.github.Yasenia.flea_school.server.dao;
 
 import java.util.List;

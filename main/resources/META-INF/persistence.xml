@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+    version="2.1">
+
+    <!-- 为持久化单元取名为 fleaSchool -->
+    <persistence-unit name="fleaSchool"
+        transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <!-- 指定持久化类 -->
+        <class>com.github.Yasenia.flea_school.server.entity.User</class>
+        <class>com.github.Yasenia.flea_school.server.entity.CollectGoods</class>
+        <class>com.github.Yasenia.flea_school.server.entity.Goods</class>
+        <class>com.github.Yasenia.flea_school.server.entity.Location</class>
+        <class>com.github.Yasenia.flea_school.server.entity.School</class>
+        <class>com.github.Yasenia.flea_school.server.entity.GoodsType</class>
+        <class>com.github.Yasenia.flea_school.server.entity.FocusUser</class>
+        <class>com.github.Yasenia.flea_school.server.entity.Permit</class>
+
+        <!-- 配置数据库信息 -->
+        <properties>
+            <!-- 自动输出schema创建DDL语句 -->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+        </properties>
+
+    </persistence-unit>
+</persistence>

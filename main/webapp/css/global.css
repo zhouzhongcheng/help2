@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+body {
+    background-color: #CCC;
+}
+
+.frame{
+    min-width: 900px;
+    max-width: 900px;
+}
